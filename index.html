@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Task 1</title>
+    </head>
+    <body>
+        <img src="logo.jpg" alt="logo">
+        <h1>Main Heading</h1>
+        <h2>Sub Heading</h2>
+        <p>This page includes all the required elements: headings, paragraphs, a styled table, and a full HTML form<br> with all input types and attributes.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corrupti nulla. In commodi aperiam autem molestiae. Dolores perspiciatis atque eos tempora quibusdam, consectetur nam corporis optio doloremque nemo eveniet quas!</p>
+        <a href="https://www.google.com/" target="_blank">Visit Google</a>
+        <h3>Simple Student Table</h3>
+        <table border="1" style="width: 50%; border-collapse: collapse;">
+            <thead style="background-color: lightgray;">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ali</td>
+                    <td>22</td>
+                    <td>Cairo</td>
+                </tr>
+                <tr>
+                    <td>Mona</td>
+                    <td>20</td>
+                    <td>Alex</td>
+                </tr>
+                <tr>
+                    <td>Sayed</td>
+                    <td>25</td>
+                    <td>Giza</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2>Full Form Task</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="username">UserName:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" style="color: green;" value="Egypt" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+
+            <label for="file">Choose a file:</label>
+            <input type="file" id="file" name="file" required><br><br>
+
+            <label for="city">Choose your city:</label>
+            <select id="city" name="city" style="color: blue;" required>
+                <option value="cairo">Cairo</option>
+                <option value="alex">Alex</option>
+                <option value="giza">Giza</option>
+            </select><br><br>
+
+            <label for="ffruit">Favourite fruit:</label>
+            <input list="fruits" id="ffruit" name="fruit" required>
+            <datalist id="fruits">
+                <option value="Apple"></option>
+                <option value="Banana"></option>
+                <option value="Orange"></option>
+            </datalist><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="gender" name="gender" value="Male" required> Male<br>
+            <input type="radio" id="gender" name="gender" value="Female" required> Female<br><br>
+
+            <label for="skills">Skills:</label><br>
+            <input type="checkbox" id="skills" name="skills" value="HTML"> HTML<br>
+            <input type="checkbox" id="skills" name="skills" value="CSS"> CSS<br>
+            <input type="checkbox" id="skills" name="skills" value="JS"> JavaScript<br><br>
+
+            <label for="disapled_input">Disables Input:</label>
+            <input type="tect" id="diabled_input" name="disabled_input" value="You can't edit this" disabled><br><br>
+
+            <label for="readonly_input">Readonly Input: </label>
+            <input type="text" id="readonly_input" name="readonly_input" value="Read only here" readonly><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Write something..." required></textarea><br><br>
+            <button type="submit" style="background-color: green; border: none; border-radius: 5px; color: white; padding: 10px;">Submit</button>
+        
+        </form>
+    </body>
+</html>
